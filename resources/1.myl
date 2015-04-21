@@ -1,0 +1,9 @@
+VAR
+a INT;
+b INT;
+n INT;
+z ARRAYOF INT;
+x ARRAYOF ARRAYOF INT;
+BEGIN
+a := 10
+END
