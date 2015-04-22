@@ -4,7 +4,7 @@ import jdk.nashorn.internal.runtime.regexp.joni.exception.SyntaxException;
 import ru.nsu.shmakov.lexemes.Lexeme;
 import ru.nsu.shmakov.lexemes.LexemeType;
 import ru.nsu.shmakov.lexemes.TerminalConsts;
-import ru.nsu.shmakov.lexer.LexedProgram;
+import ru.nsu.shmakov.Lexer.LexedProgram;
 import ru.nsu.shmakov.tree.TreeNode;
 import sun.reflect.generics.tree.Tree;
 
@@ -149,10 +149,10 @@ public class Parser {
         }
         else if (!lexeme.equals(TerminalConsts.openingBracket)) {
             TreeNode assignmentNode = parseAssignment();
-            bodyNode = new TreeNode(TerminalConsts.separator);
-            assignmentNode.setParent(bodyNode);
-            bodyNode.addChild(assignmentNode);
-            return bodyNode;
+            //bodyNode = new TreeNode(TerminalConsts.separator);
+            //assignmentNode.setParent(bodyNode);
+            //bodyNode.addChild(assignmentNode);
+            return assignmentNode;
         } else {
             goFront();
             TreeNode body1 = parseBody();

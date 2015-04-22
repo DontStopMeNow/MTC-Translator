@@ -1,8 +1,8 @@
 package ru.nsu.shmakov;
 
 import ru.nsu.shmakov.Buffer.Buffer;
-import ru.nsu.shmakov.lexer.LexedProgram;
-import ru.nsu.shmakov.lexer.Lexer;
+import ru.nsu.shmakov.Lexer.LexedProgram;
+import ru.nsu.shmakov.Lexer.Lexer;
 import ru.nsu.shmakov.lexemes.Lexeme;
 import ru.nsu.shmakov.parser.Parser;
 import ru.nsu.shmakov.translator.Translator;

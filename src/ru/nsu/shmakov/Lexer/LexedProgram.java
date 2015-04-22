@@ -1,4 +1,4 @@
-package ru.nsu.shmakov.lexer;
+package ru.nsu.shmakov.Lexer;
 
 import ru.nsu.shmakov.lexemes.Lexeme;
 

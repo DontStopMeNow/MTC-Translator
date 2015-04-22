@@ -5,5 +5,5 @@ n INT;
 z ARRAYOF INT;
 x ARRAYOF ARRAYOF INT;
 BEGIN
-a := 10
+(a := (10 / b)^n + APP(z, b) $ a := a + b)
 END

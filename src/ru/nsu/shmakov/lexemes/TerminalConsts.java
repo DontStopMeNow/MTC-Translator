@@ -19,7 +19,6 @@ public class TerminalConsts {
     public static Lexeme equally            = new Lexeme("=", LexemeType.OPERATOR);
     public static Lexeme lessOrEqually      = new Lexeme("<=", LexemeType.OPERATOR);
     public static Lexeme moreOrEqually      = new Lexeme(">=", LexemeType.OPERATOR);
-
     public static Lexeme notEqually         = new Lexeme("!=", LexemeType.OPERATOR);
     public static Lexeme app                = new Lexeme("APP", LexemeType.OPERATOR);
     public static Lexeme upd                = new Lexeme("UPD", LexemeType.OPERATOR);
@@ -34,7 +33,6 @@ public class TerminalConsts {
     public static Lexeme print              = new Lexeme("PRINT", LexemeType.OPERATOR);
     public static Lexeme input              = new Lexeme("INPUT", LexemeType.OPERATOR);
     public static Lexeme var                = new Lexeme("VAR", LexemeType.OPERATOR);
-
     public static Lexeme begin              = new Lexeme("BEGIN", LexemeType.OPERATOR);
     public static Lexeme end                = new Lexeme("END", LexemeType.OPERATOR);
     public static Lexeme comma              = new Lexeme(",", LexemeType.OPERATOR);
@@ -180,7 +178,6 @@ public class TerminalConsts {
         return input;
     }
 
-
     public static Lexeme getVar() {
         return var;
     }
@@ -193,8 +190,8 @@ public class TerminalConsts {
         return end;
     }
 
+
     public static Lexeme getTest() {
         return test;
     }
-
 }
