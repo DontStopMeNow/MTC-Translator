@@ -1,9 +1,7 @@
 VAR
 a INT;
 b INT;
-n INT;
-z ARRAYOF INT;
-x ARRAYOF ARRAYOF INT;
+t INT;
 BEGIN
-(a := (10 / b)^n + APP(z, b) $ a := a + b)
+((a := 1 $ b := 1) $ ((?(a < 1000) $ ((PRINT(a) $ t := b) $ (b := a $ a := t + b))))@)
 END

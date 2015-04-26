@@ -24,6 +24,12 @@ public class CommandSet {
         commands.add(command);
     }
 
+    public void addBefore (Command command) {
+        commands.add(0, command);
+    }
+
+
+
     public void addToLabels(int a) {
         for (Command command: commands) {
             command.addToLabel(a);

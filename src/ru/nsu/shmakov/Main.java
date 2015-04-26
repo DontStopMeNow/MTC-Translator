@@ -29,7 +29,10 @@ public class Main {
         ps.println(root.serrTree());
 
         Translator t = new Translator(root, parser.getVariablesTable(), parser.getConstantsTable());
-        t.translate();
+        fos = new FileOutputStream("./resources/1.byte");
+        ps = new PrintStream(fos);
+        ps.println(t.translate());
+
         /*for (Lexeme lex : lexemes) {
             StringBuilder sb = new StringBuilder();
             sb.append(lex.getType());
