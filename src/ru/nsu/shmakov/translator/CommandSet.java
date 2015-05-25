@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by Иван on 22.04.2015.
  */
 public class CommandSet {
-    ArrayList<Command> commands;
+    private ArrayList<Command> commands;
 
     public CommandSet(ArrayList<Command> commands) {
         this.commands = commands;
@@ -68,4 +68,9 @@ public class CommandSet {
         ArrayList<Command> anotherCommands = another.getCommands();
         this.commands.addAll(anotherCommands);
     }
+
+    public Command getCommand(int i) {
+        return commands.get(i);
+    }
+
 }

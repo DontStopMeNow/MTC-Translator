@@ -1,7 +1,6 @@
 VAR
 a INT;
 b INT;
-t INT;
 BEGIN
-((a := 1 $ b := 1) $ ((?(a < 1000) $ ((PRINT(a) $ t := b) $ (b := a $ a := t + b))))@)
+((a := 1 $ b := 1) $ ((?(a < 1000) $ (PRINT(b) $ (b := a + b $ a := b - a))))@)
 END

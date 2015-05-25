@@ -95,7 +95,7 @@ public class Parser {
                 } else {
                     variable.setVarType(varType);
                     variablesTable.put(variable.getValue(), variable);
-                    System.out.println(variable.toString());
+                    //System.out.println(variable.toString());
                 }
             }
         }

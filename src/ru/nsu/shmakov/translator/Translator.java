@@ -26,11 +26,11 @@ public class Translator {
         this.constantsTable = constantsTable;
     }
 
-    public String translate() {
-        return translateVar().concat(translateBody(r).toString());
+    public CommandSet translate() {
+        return translateBody(r);
     }
 
-    private String translateVar() {
+    public String translateVar() {
         StringBuilder sb = new StringBuilder();
         sb.append(variablesTable.size()).append('\n');
         Set<String> keys = variablesTable.keySet();
@@ -177,4 +177,10 @@ public class Translator {
         expressionSet.addCommand(result);
         expressionCounter++;
     }
+
+    public Map<String, Lexeme> getVariablesTable() {
+        return variablesTable;
+    }
+
+
 }
