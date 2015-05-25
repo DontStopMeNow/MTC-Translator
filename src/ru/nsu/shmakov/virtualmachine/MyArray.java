@@ -50,7 +50,7 @@ public class MyArray<T extends MyVariable> implements MyVariable {
             T tmp = (T) values.get(key).clone();
             res.values.put(key.intValue(), tmp);
         }
-
+        res.setLevel(this.level);
         return res;
     }
 

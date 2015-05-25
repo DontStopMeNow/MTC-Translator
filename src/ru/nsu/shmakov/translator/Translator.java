@@ -126,7 +126,7 @@ public class Translator {
         Command jumpEnd = new Command(maxRight + 1, "\\jmp");
         Command jumpStart = new Command(-1, "\\jmp");
 
-        jumpStart.addNextCommand(1);
+        jumpStart.addNextCommand(0);
         jumpStart.addNextCommand(maxLeft + 1);
 
         leftSet.addAll(rightSet);

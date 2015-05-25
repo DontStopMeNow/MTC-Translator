@@ -1,6 +1,5 @@
 package ru.nsu.shmakov.virtualmachine;
 
-import com.sun.org.apache.xpath.internal.operations.Variable;
 import ru.nsu.shmakov.lexemes.Lexeme;
 import ru.nsu.shmakov.translator.Command;
 import ru.nsu.shmakov.translator.CommandSet;
@@ -15,7 +14,6 @@ public class VirtualMachine {
     private CommandSet program;
     private HashMap<String, MyVariable> variables = new HashMap<String, MyVariable>();
     private Queue<Condition> conditions = new ArrayDeque<Condition>();
-    private Stack<MyVariable> MathStack = new Stack<MyVariable>();
     private ArrayList<Condition> finalCond = new ArrayList<Condition>();
 
     public VirtualMachine(CommandSet program, Map<String, Lexeme> variablesTable) {
@@ -45,7 +43,6 @@ public class VirtualMachine {
         }
         Condition startCondition = new Condition(0, program, (HashMap<String, MyVariable>)variables.clone());
         conditions.add(startCondition);
-        //System.out.println(variables.toString());
     }
 
     public void start() {
@@ -60,11 +57,11 @@ public class VirtualMachine {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
             if(currentCommand.getNextCommands().size() == 0) {
                 finalCond.add(currentCondition);
                 continue;
             }
+
             for (int i = 0; i < currentCommand.getNextCommands().size(); i++) {
                 Condition newCondition = currentCondition.clone();
                 newCondition.setCodePosition(currentCommand.getNextCommands().get(i));
@@ -84,20 +81,20 @@ public class VirtualMachine {
         }
     }
 
-    public void applyCommand(Command command, Condition condition) throws IOException {
+    private void applyCommand(Command command, Condition condition) throws IOException {
         String name = command.getName();
+        Stack<MyVariable> mathStack = condition.getMathStack();
         try {
             int tmp = Integer.parseInt(name);
-            MathStack.add(new MyInt(tmp));
+            mathStack.add(new MyInt(tmp));
         }
         catch (Exception e) {
-            if(variables.containsKey(name))
-                MathStack.add(variables.get(name));
+            if(condition.getVariables().containsKey(name))
+                mathStack.add(condition.getVariables().get(name));
             else {
-
                 if (name.equals(":=")) {
-                    MyVariable operand1 = MathStack.pop();
-                    MyVariable operand2 = MathStack.pop();
+                    MyVariable operand1 = mathStack.pop();
+                    MyVariable operand2 = mathStack.pop();
                     if (operand1.getLevel() == operand2.getLevel() && operand1.getLevel() == 0) {
                         MyInt var  = (MyInt) operand2;
                         MyInt expr = (MyInt) operand1;
@@ -112,83 +109,83 @@ public class VirtualMachine {
                         throw new RuntimeException("Invalid arr types");
                 }
                 else if(name.equals("+")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
-                    MathStack.add(new MyInt(operand1.value + operand2.value));
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
+                    mathStack.add(new MyInt(operand1.value + operand2.value));
                 }
                 else if(name.equals("-")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
-                    MathStack.add(new MyInt(operand2.value - operand1.value));
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
+                    mathStack.add(new MyInt(operand2.value - operand1.value));
                 }
                 else if(name.equals("*")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
-                    MathStack.add(new MyInt(operand2.value * operand1.value));
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
+                    mathStack.add(new MyInt(operand2.value * operand1.value));
                 }
                 else if(name.equals("/")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
-                    MathStack.add(new MyInt(operand2.value / operand1.value));
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
+                    mathStack.add(new MyInt(operand2.value / operand1.value));
                 }
                 else if(name.equals("^")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
-                    MathStack.add(new MyInt((int) Math.pow(operand2.value , operand1.value)));
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
+                    mathStack.add(new MyInt((int) Math.pow(operand2.value , operand1.value)));
                 }
                 else if(name.equals("<")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
                     if (!(operand2.value < operand1.value))
                         throw new TestException("< test failed");
                 }
                 else if(name.equals(">")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
                     if (!(operand2.value > operand1.value))
                         throw new TestException("> test failed");
                 }
                 else if(name.equals("=")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
                     if (!(operand2.value == operand1.value))
                         throw new TestException("= test failed");
                 }
                 else if(name.equals("<=")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
                     if (!(operand2.value <= operand1.value))
                         throw new TestException("<= test failed");
                 }
                 else if(name.equals(">=")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
                     if (!(operand2.value >= operand1.value))
                         throw new TestException(">= test failed");
                 }
                 else if(name.equals("!=")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
                     if (!(operand2.value < operand1.value))
                         throw new TestException("!= test failed");
                 }
                 else if(name.equals("PRINT")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
+                    MyInt operand1 = (MyInt) mathStack.pop();
                     System.out.println(operand1.value);
                 }
                 else if(name.equals("INPUT")) {
                     int tmp = new Scanner(System.in).nextInt();
-                    MathStack.add(new MyInt(tmp));
+                    mathStack.add(new MyInt(tmp));
                 }
                 else if(name.equals("APP")) {
-                    MyInt operand1 = (MyInt)MathStack.pop();
-                    MyArray operand2 = (MyArray)MathStack.pop();
-                    MathStack.add(operand2.get(operand1.getValue()).clone());
+                    MyInt operand1 = (MyInt) mathStack.pop();
+                    MyArray operand2 = (MyArray) mathStack.pop();
+                    mathStack.add(operand2.get(operand1.getValue()).clone());
                 }
                 else if(name.equals("UPD")) {
-                    MyVariable operand1 = (MyVariable)MathStack.pop();
-                    MyInt operand2 = (MyInt)MathStack.pop();
-                    MyArray operand3 = (MyArray)MathStack.pop();
+                    MyVariable operand1 = (MyVariable) mathStack.pop();
+                    MyInt operand2 = (MyInt) mathStack.pop();
+                    MyArray operand3 = (MyArray) mathStack.pop();
                     if(operand1.getLevel() != operand3.getLevel()-1)
                         throw new RuntimeException("Invalid array level");
 
@@ -196,14 +193,18 @@ public class VirtualMachine {
 
                     newArray.put(operand2.getValue(), operand1.clone());
                     newArray.setLevel(operand1.getLevel()+1);
-                    System.out.println(newArray);
-                    MathStack.add(newArray);
+                    //System.out.println(newArray);
+                    mathStack.add(newArray);
 
                 }
 
             }
         }
         //System.out.println(variables);
+    }
+
+    public ArrayList<Condition> getFinalCond() {
+        return finalCond;
     }
 
     class TestException extends RuntimeException {

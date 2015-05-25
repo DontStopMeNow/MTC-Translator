@@ -7,6 +7,7 @@ import ru.nsu.shmakov.lexemes.Lexeme;
 import ru.nsu.shmakov.parser.Parser;
 import ru.nsu.shmakov.translator.Translator;
 import ru.nsu.shmakov.tree.TreeNode;
+import ru.nsu.shmakov.virtualmachine.Condition;
 import ru.nsu.shmakov.virtualmachine.MyArray;
 import ru.nsu.shmakov.virtualmachine.MyInt;
 import ru.nsu.shmakov.virtualmachine.VirtualMachine;
@@ -58,6 +59,16 @@ public class Main {
 
         VirtualMachine vm = new VirtualMachine(t.translate(), t.getVariablesTable());
         vm.start();
+
+        fos = new FileOutputStream("./resources/1.cds");
+        ps = new PrintStream(fos);
+        ArrayList<Condition> fConds = vm.getFinalCond();
+
+        for (Condition  condition : fConds) {
+            ps.println(condition.toString());
+        }
+        //ps.println(t.translateVar().concat(t.translate().toString()));
+
         /*for (Lexeme lex : lexemes) {
             StringBuilder sb = new StringBuilder();
             sb.append(lex.getType());
