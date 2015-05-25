@@ -181,12 +181,24 @@ public class VirtualMachine {
                     MathStack.add(new MyInt(tmp));
                 }
                 else if(name.equals("APP")) {
-                    int tmp = new Scanner(System.in).nextInt();
-                    MathStack.add(new MyInt(tmp));
+                    MyInt operand1 = (MyInt)MathStack.pop();
+                    MyArray operand2 = (MyArray)MathStack.pop();
+                    MathStack.add(operand2.get(operand1.getValue()).clone());
                 }
                 else if(name.equals("UPD")) {
-                    int tmp = new Scanner(System.in).nextInt();
-                    MathStack.add(new MyInt(tmp));
+                    MyVariable operand1 = (MyVariable)MathStack.pop();
+                    MyInt operand2 = (MyInt)MathStack.pop();
+                    MyArray operand3 = (MyArray)MathStack.pop();
+                    if(operand1.getLevel() != operand3.getLevel()-1)
+                        throw new RuntimeException("Invalid array level");
+
+                    MyArray newArray = operand3.clone();
+
+                    newArray.put(operand2.getValue(), operand1.clone());
+                    newArray.setLevel(operand1.getLevel()+1);
+                    System.out.println(newArray);
+                    MathStack.add(newArray);
+
                 }
 
             }

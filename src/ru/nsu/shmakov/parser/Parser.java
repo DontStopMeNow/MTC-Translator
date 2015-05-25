@@ -370,7 +370,7 @@ public class Parser {
             }
             lexeme = getValidLexeme(TerminalConsts.closingBracket);
 
-            TreeNode node = new TreeNode(TerminalConsts.app, array.getType());
+            TreeNode node = new TreeNode(TerminalConsts.upd, array.getType());
             array.setParent(node);
             operand.setParent(node);
             operand2.setParent(node);

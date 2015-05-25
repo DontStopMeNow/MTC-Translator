@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36af30c9-0c7d-4de0-9d4e-72a42912973e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/Condition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyInt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyVariable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/VirtualMachine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/1.byte" afterPath="$PROJECT_DIR$/resources/1.byte" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MTC-Translator/1.lex" afterPath="$PROJECT_DIR$/out/production/MTC-Translator/1.lex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/1.lex" afterPath="$PROJECT_DIR$/resources/1.lex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MTC-Translator/1.myl" afterPath="$PROJECT_DIR$/out/production/MTC-Translator/1.myl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/1.myl" afterPath="$PROJECT_DIR$/resources/1.myl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/nsu/shmakov/translator/CommandSet.java" afterPath="$PROJECT_DIR$/src/ru/nsu/shmakov/translator/CommandSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/nsu/shmakov/Main.java" afterPath="$PROJECT_DIR$/src/ru/nsu/shmakov/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/nsu/shmakov/parser/Parser.java" afterPath="$PROJECT_DIR$/src/ru/nsu/shmakov/parser/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/nsu/shmakov/translator/Translator.java" afterPath="$PROJECT_DIR$/src/ru/nsu/shmakov/translator/Translator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/VirtualMachine.java" afterPath="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/VirtualMachine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MTC-Translator.iws" />
@@ -54,31 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.byte" pinned="false" current-in-tab="true">
+      <file leaf-file-name="1.byte" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/1.byte">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39209226" vertical-offset="0" max-vertical-offset="607">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TerminalConsts.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/lexemes/TerminalConsts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="2431">
-              <caret line="56" column="66" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lexeme.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/lexemes/Lexeme.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1037">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="867">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,8 +58,8 @@
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/parser/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.827586" vertical-offset="5865" max-vertical-offset="7004">
-              <caret line="384" column="67" selection-start-line="384" selection-start-column="67" selection-end-line="384" selection-end-column="67" />
+            <state vertical-scroll-proportion="-6.62069" vertical-offset="2528" max-vertical-offset="7004">
+              <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,8 +70,8 @@
       <file leaf-file-name="VirtualMachine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/VirtualMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2755" max-vertical-offset="3536">
-              <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3146" max-vertical-offset="3740">
+              <caret line="197" column="59" selection-start-line="197" selection-start-column="59" selection-end-line="197" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#444#464#0" expanded="true" />
@@ -108,18 +79,42 @@
                 <element signature="e#590#602#0" expanded="true" />
                 <element signature="e#664#675#0" expanded="true" />
                 <element signature="e#1492#1504#0" expanded="true" />
-                <element signature="e#8562#8563#0" expanded="true" />
-                <element signature="e#8600#8601#0" expanded="true" />
+                <element signature="e#9167#9168#0" expanded="true" />
+                <element signature="e#9205#9206#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/Lexer/Lexer.java">
+      <file leaf-file-name="Translator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/translator/Translator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="2601">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2181" max-vertical-offset="3094">
+              <caret line="151" column="17" selection-start-line="151" selection-start-column="10" selection-end-line="151" selection-end-column="17" />
+              <folding>
+                <element signature="e#5458#5467#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyArray.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1717">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Condition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/Condition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="765">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,21 +132,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.lex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/1.lex">
+      <file leaf-file-name="MyInt.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyInt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-              <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1037">
+              <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+              <folding>
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.myl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="1.myl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/1.myl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-              <caret line="4" column="79" selection-start-line="4" selection-start-column="79" selection-end-line="4" selection-end-column="79" />
+            <state vertical-scroll-proportion="0.16803955" vertical-offset="0" max-vertical-offset="607">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="156" />
               <folding />
             </state>
           </provider>
@@ -185,11 +183,11 @@
         <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyArrayList.java" />
         <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/translator/Translator.java" />
         <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyInt.java" />
-        <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyArray.java" />
         <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/translator/CommandSet.java" />
         <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/Main.java" />
         <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyVariable.java" />
         <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/Condition.java" />
+        <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyArray.java" />
         <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/parser/Parser.java" />
         <option value="$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/VirtualMachine.java" />
         <option value="$PROJECT_DIR$/resources/1.myl" />
@@ -288,7 +286,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="virtualmachine" />
+              <option name="myItemId" value="tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MTC-Translator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MTC-Translator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shmakov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="translator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -644,7 +664,7 @@
       <workItem from="1429637541523" duration="21725000" />
       <workItem from="1430084214552" duration="45000" />
       <workItem from="1431790759083" duration="607000" />
-      <workItem from="1432498361047" duration="16247000" />
+      <workItem from="1432498361047" duration="19654000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world commit">
       <created>1426267524145</created>
@@ -682,11 +702,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430046304050</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Virtual machine that work with INT's is complete">
+      <created>1432540840425</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1432540840425</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50447000" />
+    <option name="totallyTimeSpent" value="53854000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -710,7 +736,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -726,7 +752,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -762,7 +788,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;src/ru/nsu/shmakov/Lexer/Lexer.java&#10;&#9;src/ru/nsu/shmakov/Main.java&#10;&#9;src/ru/nsu/shmakov/lexemes/TerminalConsts.java&#10;" />
     <MESSAGE value="Translator started" />
     <MESSAGE value="Translator complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Translator complete" />
+    <MESSAGE value="Virtual machine that work with INT's is complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Virtual machine that work with INT's is complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1057,52 +1084,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/translator/Translator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1722" max-vertical-offset="3094">
-          <caret line="151" column="17" selection-start-line="151" selection-start-column="10" selection-end-line="151" selection-end-column="17" />
-          <folding>
-            <element signature="e#5458#5467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/Buffer/Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1513">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1037">
-          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
-          <folding>
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1717">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="765">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,13 +1118,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/parser/Parser.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/lexemes/TerminalConsts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.827586" vertical-offset="5865" max-vertical-offset="7004">
-          <caret line="384" column="67" selection-start-line="384" selection-start-column="67" selection-end-line="384" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2431">
+          <caret line="56" column="66" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/1.lex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1147,6 +1139,37 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1037">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+          <folding>
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/MyArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1717">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="765">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1160,18 +1183,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/lexemes/TerminalConsts.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/translator/Translator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2431">
-          <caret line="56" column="66" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1722" max-vertical-offset="3094">
+          <caret line="151" column="17" selection-start-line="151" selection-start-column="10" selection-end-line="151" selection-end-column="17" />
+          <folding>
+            <element signature="e#5458#5467#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/1.byte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="867">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/virtualmachine/VirtualMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2755" max-vertical-offset="3536">
-          <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3146" max-vertical-offset="3740">
+          <caret line="197" column="59" selection-start-line="197" selection-start-column="59" selection-end-line="197" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#444#464#0" expanded="true" />
@@ -1179,32 +1212,26 @@
             <element signature="e#590#602#0" expanded="true" />
             <element signature="e#664#675#0" expanded="true" />
             <element signature="e#1492#1504#0" expanded="true" />
-            <element signature="e#8562#8563#0" expanded="true" />
-            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#9167#9168#0" expanded="true" />
+            <element signature="e#9205#9206#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/1.lex">
+    <entry file="file://$PROJECT_DIR$/src/ru/nsu/shmakov/parser/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
+        <state vertical-scroll-proportion="-6.62069" vertical-offset="2528" max-vertical-offset="7004">
+          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/1.myl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <caret line="4" column="79" selection-start-line="4" selection-start-column="79" selection-end-line="4" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/1.byte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39209226" vertical-offset="0" max-vertical-offset="607">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.16803955" vertical-offset="0" max-vertical-offset="607">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="156" />
           <folding />
         </state>
       </provider>

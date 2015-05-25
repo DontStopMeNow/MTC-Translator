@@ -1,6 +1,8 @@
 VAR
 a INT;
 b INT;
+arr ARRAYOF INT;
+arr2 ARRAYOF ARRAYOF INT;
 BEGIN
-((a := 1 $ b := 1) $ ((?(a < 1000) $ (PRINT(b) $ (b := a + b $ a := b - a))))@)
+(((arr := UPD(arr, 10, 1) $ arr2 := UPD(arr2, 9, arr)) $ (a := 1 $ b := APP(APP(arr2, 9), 10))) $ ((?(a < 1000) $ (PRINT(b) $ (b := a + b $ a := b - a))))@)
 END
